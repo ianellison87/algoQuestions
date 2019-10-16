@@ -1,6 +1,15 @@
 //  O(n^2) time | O(1) space
 function twoNumberSum(array, targetSum) {
-
+  for (let i = 0; i < array.length  - 1; i++) {
+    const x = array[i];
+    for (let j = i+1; j < array.length; j++) {
+      const y = array[j];
+      if (x + y === targetSum) {
+        return [x , y].sort((a,b) => a - b);
+      }
+    }
+  }
+  return [];
 }
 
 // O(n) time | O(n) space
