@@ -6,4 +6,5 @@ function bstconstruction (stuff) {
   console.log("")
   // stuff stuff stuffity stuff stuff
   console.log("jittery cat")
+  console.log("im like a woodpecker in a petrified forest")
 }
