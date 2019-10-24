@@ -3,4 +3,5 @@ function bstconstruction (stuff) {
   console.log("other stuff")
   console.log("one more")
   console.log("not cool")
+  console.log("")
 }
