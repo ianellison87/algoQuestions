@@ -1,3 +1,3 @@
 function javascript (stuff) {
-  
+  ok
 }
