@@ -1,0 +1,3 @@
+function getNthFib(n) {
+  
+}
