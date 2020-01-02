@@ -1,6 +1,17 @@
 function caesarCipherEncryptor(string, key) {
-  // Write your code here.
+  let alpha = "abcdefghijklmnopqrstuvwxyz"
+  let newString = ""
+
+  for (let i = 0; i < string.length; i++) {
+    let origionalIndex = alpha.indexOf(string[i]);
+    console.log(alpha.indexOf(string[i]))
+    let newIndex = (origionalIndex + key)%26
+    // console.log(newIndex)
+    // console.log(alpha[newIndex])
+    newString = newString.concat(alpha[newIndex])
+  }
+
+  return newString
 }
 
-// Do not edit the line below.
-exports.caesarCipherEncryptor = caesarCipherEncryptor;
+console.log(caesarCipherEncryptor("xyz", 2));
